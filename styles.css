@@ -87,6 +87,150 @@ body {
   }
 }
 
+/* ================= Buttons ================== */
+/* Button Base Styles */
+.btn {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 12px 30px;
+  border-radius: 30px;
+  background-color: #08513f; /* Primary color */
+  color: #ffffff; /* White text */
+  border: 2px solid transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #067234; /* Darker shade of green */
+  color: #e8f5e9; /* Lighter green text on hover */
+  border-color: #067234;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98); /* Slight shrink on click for interaction feedback */
+}
+
+.btn:disabled {
+  background-color: #cccccc; /* Disabled button state */
+  color: #999999;
+  cursor: not-allowed;
+  border-color: #cccccc;
+}
+
+/* Responsive button size adjustment */
+@media (max-width: 767px) {
+  .btn {
+    font-size: 0.9rem;
+    padding: 10px 25px;
+  }
+}
+/* =============== */
+/* Button Base Styles */
+.btn-gradient {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 50px; /* Rounded edges */
+  background: linear-gradient(45deg, #08513f, #006a42); /* Green gradient */
+  color: #ffffff; /* White text */
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for hover and active states */
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(
+    45deg,
+    #006a42,
+    #08513f
+  ); /* Reverse gradient on hover */
+  color: #ffffff; /* Ensure text remains white */
+  transform: scale(1.1); /* Slightly grow the button for hover interaction */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow for hover effect */
+  border-radius: 60px; /* Rounded edges with extra flair on hover */
+}
+
+.btn-gradient:focus {
+  outline: none;
+}
+
+.btn-gradient:active {
+  transform: scale(0.98); /* Slight shrink on click for feedback */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shrink shadow on click */
+}
+
+.btn-gradient:disabled {
+  background-color: #e0e0e0; /* Disabled gray background */
+  color: #b0b0b0; /* Disabled text color */
+  cursor: not-allowed;
+  box-shadow: none; /* Remove shadow when disabled */
+}
+
+/* Responsive button size adjustment */
+@media (max-width: 767px) {
+  .btn-gradient {
+    font-size: 0.9rem;
+    padding: 12px 30px;
+  }
+}
+/* ============ yellow */
+/* Button Base Styles */
+.btn-yellow {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  background-color: #ffeb3b; /* Yellow background */
+  color: #333333; /* Dark text for contrast */
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-yellow:hover {
+  background-color: #fbc02d; /* Darker yellow on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btn-yellow:focus {
+  outline: none;
+}
+
+.btn-yellow:active {
+  background-color: #f57f17; /* Even darker yellow on active state */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-yellow:disabled {
+  background-color: #e0e0e0;
+  color: #b0b0b0;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Responsive button size adjustment */
+@media (max-width: 767px) {
+  .btn-yellow {
+    font-size: 0.9rem;
+    padding: 10px 25px;
+  }
+}
+
 /* ======================= About Section ======================= */
 .roboto {
   font-family: "Roboto" !important;
@@ -244,7 +388,7 @@ body {
   }
 }
 #footer {
-  background-color: #333; /* Darker background for contrast */
+  background: url(./images/color-bg.jpg); /* Darker background for contrast */
   color: #f8f9fa;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -253,7 +397,7 @@ body {
 #footer .footer-heading {
   font-size: 1.3rem;
   font-weight: bold;
-  color: #F1C152; /* Primary color */
+  color: #f1c152; /* Primary color */
   margin-bottom: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -278,7 +422,7 @@ body {
 }
 
 #footer .footer-link:hover {
-  color: #F1C152;
+  color: #f1c152;
   padding-left: 10px;
 }
 
@@ -286,7 +430,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 20%;
   margin-bottom: 20px;
 }
 
@@ -299,7 +443,7 @@ body {
 }
 
 #footer .social-icon:hover {
-  background-color: #F1C152;
+  background-color: #f1c152;
   color: #fff;
   transform: scale(1.1);
 }
@@ -307,20 +451,21 @@ body {
 #footer .input-group {
   margin-top: 1.5rem;
   display: flex;
+  flex-wrap: wrap;
 }
 
 #footer .input-group input {
   border-radius: 25px;
   padding: 15px;
-  font-size: 0.9rem;
+  font-size: 1rem;
   border: none;
   flex: 1;
 }
 
 #footer .input-group button {
   border-radius: 25px;
-  background-color: #F1C152;
-  /*Buttoncolor*/border: none;
+  background-color: #f1c152;
+  border: none;
   color: white;
   padding: 15px 25px;
   margin-left: 10px;
