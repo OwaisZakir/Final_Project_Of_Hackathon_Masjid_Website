@@ -1,12 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boiler Plate</title>
-</head>
-<body>
-    <h2>Hello Friends</h2>
-    <h1>I Am Owias Zakir</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masjid Website</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@QWEPRUIO400;500&family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="navbar fixed navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.png" alt="Masjid Logo" class="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Activities">Activities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <button class="btn px-4 py-1 nav-link fs-6 bg-danger">Donate</button>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section id="hero" class="bg-image">
+      <div class="container d-flex justify-content-center">
+        <div class="row pt-1 pt-lg-6 d-flex">
+          <div id="left" class="col-12 col-md-6 d-flex flex-wrap">
+            <h1 class="display-1 text-white">Welcome to Our Masjid</h1>
+            <p class="text-white mb-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              finibus tristique dui, vel varius neque semper non. Donec ac
+              aliquet lectus. Donec id ex id neque consectetur gravida.
+            </p>
+            <a href="#" class="btn px-4 py-2 btn-danger">Contact Us</a>
+          </div>
+          <div id="right" class="col-12 col-md-6 d-flex justify-content-end">
+            <img
+              src="./images/hero-img-1.png"
+              alt="Masjid Image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========= About Us section =============== -->
+    <section id="about">
+      <div class="container pt-lg-5 pt-4">
+        <div class="row g-5 mb-5">
+          <div class="col-xl-6">
+            <div class="row g-4">
+              <div class="col-6">
+                <img
+                  src="images/about-1.jpg"
+                  class="img-fluid h-100 wow zoomIn"
+                  data-wow-delay="0.1s"
+                  alt=""
+                  style="
+                    visibility: visible;
+                    animation-delay: 0.1s;
+                    animation-name: zoomIn;
+                  "
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  src="images/about-2.jpg"
+                  class="img-fluid pb-3 wow zoomIn"
+                  data-wow-delay="0.1s"
+                  alt=""
+                  style="
+                    visibility: visible;
+                    animation-delay: 0.1s;
+                    animation-name: zoomIn;
+                  "
+                />
+                <img
+                  src="images/about-3.jpg"
+                  class="img-fluid pt-3 wow zoomIn"
+                  data-wow-delay="0.1s"
+                  alt=""
+                  style="
+                    visibility: visible;
+                    animation-delay: 0.1s;
+                    animation-name: zoomIn;
+                  "
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-6 rounded-5"
+            data-wow-delay="0.5s"
+            style="
+              visibility: visible;
+              animation-delay: 0.5s;
+              animation-name: fadeIn;
+            "
+          >
+            <p class="fs-5 text-uppercase text-primary second-color">
+              About THE Masjid
+            </p>
+            <h1
+              class="display-5 pb-4 m-0 fw-bold"
+              style="font-family: 'poppins', sans-serif"
+            >
+              Allah Help Those Who Help Themselves
+            </h1>
+            <p class="pb-4">
+              Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor
+              mattis aliquam. Etiam quis mauris justo. Vivamus purus nulla,
+              rutrum ac risus in.
+            </p>
+            <div class="row g-4 mb-4">
+              <div class="col-md-6">
+                <div
+                  class="ps-3 d-flex align-items-center justify-content-start"
+                >
+                  <span class="bg-primary mt-4 me-2 rounded-circle Aboutbtn"
+                    ><i class="fa fa-eye text-dark fa-4x mb-5 pb-2"></i
+                  ></span>
+                  <div class="ms-4">
+                    <h5 class="fw-bold">Our Vision</h5>
+                    <p class="text-muted">
+                      Lorem ipsum dolor sit amet tetur nod elit sed
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="ps-3 d-flex align-items-center justify-content-start"
+                >
+                  <span
+                    class="bg-primary rounded-circle mt-4 me-2 Aboutbtn bg-primary"
+                    ><i class="fa fa-flag text-dark fa-4x mb-5 pb-2"></i
+                  ></span>
+                  <div class="ms-4">
+                    <h5 class="fw-bold">Our Mission</h5>
+                    <p class="text-muted">
+                      Lorem ipsum dolor sit amet tetur nod elit sed
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-light p-3 mb-4">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-3">
+                  <img
+                    src="images/child.jpg"
+                    class="img-fluid rounded-2"
+                    alt=""
+                  />
+                </div>
+                <div class="col-6">
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor
+                    mattis aliquam. Etiam quis mauris justo.
+                  </p>
+                </div>
+                <div class="col-3">
+                  <h2 class="mb-0 text-primary text-center second-color">
+                    $20,46
+                  </h2>
+                  <h5 class="mb-0 text-center">Raised</h5>
+                </div>
+              </div>
+            </div>
+            <div class="row g-2">
+              <div class="col-md-6">
+                <p class="mb-2">
+                  <i class="fa fa-check text-primary me-3 second-color"></i
+                  >Charity &amp; Donation
+                </p>
+                <p class="mb-0">
+                  <i class="fa fa-check text-primary me-3 second-color"></i
+                  >Parent Education
+                </p>
+              </div>
+              <div class="col-md-6">
+                <p class="mb-2">
+                  <i class="fa fa-check text-primary me-3 second-color"></i
+                  >Hadith &amp; Sunnah
+                </p>
+                <p class="mb-0">
+                  <i class="fa fa-check text-primary me-3 second-color"></i
+                  >Mosque Development
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= Activities section =============== -->
+
+    <section id="Activities">
+      <div class="container-fluid activities py-1">
+        <div class="container py-5">
+          <div
+            class="mx-auto text-center mb-5 rounded-5"
+            data-wow-delay="0.1s"
+            style="max-width: 700px"
+          >
+            <p class="fs-5 text-uppercase text-primary">Activities</p>
+            <h1 class="display-3">Here Are Our Activities</h1>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-6 col-xl-4">
+              <div class="activities-item p-4 rounded-5" data-wow-delay="0.1s">
+                <i class="fa fa-mosque fa-4x text-dark"></i>
+                <div class="ms-4">
+                  <h4>Mosque Development</h4>
+                  <p class="mb-4">
+                    Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor
+                    mattis aliquam.
+                  </p>
+                  <a href="" class="btn btn-2 px-3">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-4">
+              <div class="activities-item p-4 rounded-5" data-wow-delay="0.3s">
+                <i class="fa fa-donate fa-4x text-dark"></i>
+                <div class="ms-4">
+                  <h4>Charity & Donation</h4>
+                  <p class="mb-4">
+                    Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor
+                    mattis aliquam.
+                  </p>
+                  <a href="" class="btn btn-2 px-3">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-4">
+              <div class="activities-item p-4 rounded-5" data-wow-delay="0.5s">
+                <i class="fa fa-quran fa-4x text-dark"></i>
+                <div class="ms-4">
+                  <h4>Quran Learning</h4>
+                  <p class="mb-4">
+                    Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor
+                    mattis aliquam.
+                  </p>
+                  <a href="" class="btn btn-2 px-3">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-4">
+              <div class="activities-item p-4 rounded-5" data-wow-delay="0.1s">
+                <i class="fa fa-book fa-4x text-dark"></i>
+                <div class="ms-4">
+                  <h4>Hadith & Sunnah</h4>
+                  <p class="mb-4">
+                    Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor
+                    mattis aliquam.
+                  </p>
+                  <a href="" class="btn btn-2 px-3">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-4">
+              <div class="activities-item p-4 rounded-5" data-wow-delay="0.3s">
+                <i class="fa fa-book-open fa-4x text-dark"></i>
+                <div class="ms-4">
+                  <h4>Parent Education</h4>
+                  <p class="mb-4">
+                    Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor
+                    mattis aliquam.
+                  </p>
+                  <a href="" class="btn btn-2 px-3">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-4">
+              <div class="activities-item p-4 rounded-5" data-wow-delay="0.5s">
+                <i class="fa fa-hands fa-4x text-dark"></i>
+                <div class="ms-4">
+                  <h4>Help Orphans</h4>
+                  <p class="mb-4">
+                    Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor
+                    mattis aliquam.
+                  </p>
+                  <a href="" class="btn btn-2 px-3">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <div id="contact" class="container py-5">
+      <h2 class="section-title">Contact Us</h2>
+
+      <!-- Contact Form -->
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <h4 class="text-primary">Get in Touch</h4>
+          <form action="#" method="post" class="contact-form">
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="col-lg-6 mb-4">
+          <h4 class="text-primary">Our Location</h4>
+          <div class="contact-info">
+            <div>
+              <i class="fa fa-map-marker-alt"></i> 123 Masjid Street, City,
+              Country
+            </div>
+            <div><i class="fa fa-envelope"></i> info@masjid.com</div>
+            <div><i class="fa fa-phone"></i> +123 456 7890</div>
+          </div>
+
+          <h4 class="text-primary mt-4">Follow Us</h4>
+          <div>
+            <a href="#" class="btn btn-outline-primary btn-sm me-2">Facebook</a>
+            <a href="#" class="btn btn-outline-primary btn-sm me-2">Twitter</a>
+            <a href="#" class="btn btn-outline-primary btn-sm">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Google Map Embed -->
+      <h4 class="section-title">Find Us</h4>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.103262819462!2d-74.00601588460759!3d40.71277627933174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDMwJzAxLjYiTiA3NMKwMDAnMTguOCJ9!5e0!3m2!1sen!2sus!4v1679627358263"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- GSAP JS (Optional, for animations) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/ScrollTrigger.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
 </html>

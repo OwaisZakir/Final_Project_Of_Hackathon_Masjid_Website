@@ -1,0 +1,245 @@
+:root {
+  --bs-p: #f1c152; /* Gold */
+  --bs-d: #0d0d0d; /* Dark */
+  --bs-primary: #08513f; /* Classic green */
+}
+
+.second-color {
+  color: var(--bs-p) !important;
+}
+
+/* Global Body Styling */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* Light background */
+}
+
+/* ======================= Navbar ======================= */
+.navbar {
+  background-color: var(--bs-primary) !important;
+  padding: 15px 0;
+}
+
+.navbar-brand img {
+  max-height: 50px;
+  width: auto;
+}
+
+.navbar-nav .nav-link {
+  font-size: 16px;
+  margin-right: 15px;
+  font-weight: 500;
+  color: #fff !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--bs-p) !important; /* Gold on hover */
+}
+
+.navbar-toggler {
+  border-color: #fff;
+}
+
+/* Responsive Navbar */
+@media (max-width: 767px) {
+  .navbar-nav {
+    text-align: center;
+    width: 100%;
+  }
+  .navbar-nav .nav-link {
+    margin: 10px 0;
+    padding: 8px 16px;
+  }
+  .navbar-toggler-icon {
+    background-color: #fff;
+  }
+}
+
+/* ======================= Hero Section ======================= */
+.bg-image {
+  background-image: url("./images/1.jpg"); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.pt-lg-6 {
+  padding-top: 6.5rem !important;
+}
+
+@media (max-width: 991px) {
+  .pt-lg-6 {
+    padding-top: 5rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .pt-lg-6 {
+    padding-top: 3.5rem !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .pt-lg-6 {
+    padding-top: 2rem !important;
+  }
+}
+
+/* ======================= About Section ======================= */
+.roboto {
+  font-family: "Roboto" !important;
+}
+
+.Aboutbtn {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  width: 46px;
+  height: 46px;
+  background: var(--bs-p) !important;
+}
+
+.activities .activities-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 45px rgba(12, 18, 20, 0.08);
+  transition: 0.5s;
+}
+
+.activities .activities-item:hover {
+  background: var(--bs-p) !important;
+  color: white !important;
+}
+
+.activities .activities-item:hover i {
+  color: var(--bs-primary) !important;
+}
+
+.activities .activities-item:hover a {
+  background: #f8f9fa !important;
+  color: var(--bs-d) !important;
+}
+
+.activities .activities-item:hover a:hover {
+  background: var(--bs-d) !important;
+  color: var(--bs-p) !important;
+}
+
+.btn-2 {
+  color: #000;
+  background-color: var(--bs-p);
+  border-color: var(--bs-p);
+}
+
+.btn-2:hover {
+  color: var(--bs-p) !important;
+  background: var(--bs-d) !important;
+  border-color: var(--bs-d) !important;
+}
+
+/* ===================== Contact Section ====================== */
+
+/* Section title */
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--bs-primary); /* Green */
+}
+
+/* Contact Form */
+.contact-form {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+/* Form Inputs and Textarea */
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--bs-primary);
+}
+
+/* Submit Button */
+.contact-form button {
+  background-color: var(--bs-primary);
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #06a748; /* Slightly lighter green */
+}
+
+/* Contact Info Box */
+.contact-info {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info i {
+  color: var(--bs-primary);
+  font-size: 24px;
+}
+
+.contact-info div {
+  margin-bottom: 15px;
+}
+
+/* Map Container */
+.map-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #f2f2f2;
+  margin-top: 40px;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-form,
+  .contact-info {
+    padding: 20px;
+  }
+
+  .contact-info div {
+    font-size: 14px;
+  }
+
+  .map-container {
+    margin-top: 20px;
+  }
+}
