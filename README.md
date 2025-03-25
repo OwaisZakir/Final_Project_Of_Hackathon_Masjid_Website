@@ -14,7 +14,8 @@ Welcome to the Masjid Website project! This website is designed to serve as an o
 
 ## Demo
 
-Explore the live demo of the website [here](https://owaiszakir.github.io/hackathon/).
+Explore the live demo of the website [here](https://owaiszakir.github.io/Final_Project_Of_Hackathon_Masjid_Website
+/).
 
 ## Features
 
